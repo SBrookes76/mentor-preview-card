@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="stylesheet" href="https://github.com/twbs/bootstrap/blob/767856c7b802fe50bc68246fce248c100b563593/dist/css/bootstrap-reboot.css">
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            margin: 4rem;
+            /*width: 1440px;*/
+        }
+        .card {
+            background-color: #1c1938;
+            display: flex;
+            flex-direction: row;
+        }
+        .info {
+            padding: 6em;
+        }
+        .image {
+            background-color: #9f5dce;
+        }
+        img {
+            display: block;
+            mix-blend-mode: multiply;
+        }
+        .purple {
+            color: #9f5dce;
+        }
+        .stats {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            text-transform: uppercase;
+        }
+        .stat {
+            flex-grow: 1;
+        }
+        .text-muted {
+            color: gray;
+        }
+    </style>
 </head>
 <body>
 
-  Get insights that help your business grow.
+    <div class="card">
+        <div class="info">
+            <h1>Get <span class="purple">insights</span> that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+            <p class="text-muted">
+                Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                experience, and overall efficiency.
+            </p>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+            <div class="stats">
+                <div class="stat">
+                    <h2>10k+</h2>
+                    <p class="text-muted">companies</p>
+                </div>
+                <div class="stat">
+                    <h2>314</h2>
+                    <p class="text-muted">templates</p>
+                </div>
+                <div class="stat">
+                    <h2>12m+</h2>
+                    <p class="text-muted">queries</p>
+                </div>
+            </div>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="image">
+            <img src="./images/image-header-desktop.jpg" height="446" width="550" />
+        </div>
+    
+    </div>
+
 </body>
 </html>
